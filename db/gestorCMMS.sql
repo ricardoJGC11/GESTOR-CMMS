@@ -1,5 +1,5 @@
 -- 1. Crear la base de datos (Ejecutar por separado si es necesario)
-CREATE DATABASE "gestorCMMS";
+-- CREATE DATABASE "gestorCMMS";
 
 -- 2. Tabla de Usuarios
 CREATE TABLE usuarios (
