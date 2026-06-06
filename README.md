@@ -8,7 +8,11 @@ Sistema integral para la gestión de activos, órdenes de trabajo (OT) y trazabi
 
 # Configuración de la Base de Datos
    -Crea una base de datos nueva llamada gestorCMMS en tu gestor de preferencia (pgAdmin).
-   -Ejecuta el script database.sql incluido en el repositorio para crear las tablas y el usuario administrador.
+   -Ejecuta el script database.sql incluido en el repositorio para crear las tablas.
+
+# Creacion de primer usuario administrador
+   -Ejecuta una ves init_db.py dentro de la ruta backend
+   python init_db.py
 
 # Credenciales iniciales:
    -Usuario: admin
@@ -22,7 +26,7 @@ Sistema integral para la gestión de activos, órdenes de trabajo (OT) y trazabi
       .venv\Scripts\activate
 
 # Instala las dependencias: 
-      -pip install -r requirements.txt
+      pip install -r requirements.txt
 
 # Configuración de Variables de Entorno:
    -En la carpeta backend/, crea un nuevo archivo llamado .env.
@@ -33,7 +37,7 @@ Sistema integral para la gestión de activos, órdenes de trabajo (OT) y trazabi
       (Nota: Asegúrate de reemplazar usuario y contraseña por tus credenciales reales de PostgreSQL).
 
 # Ejecuta: 
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 
 # Frontend (React + Vite)
    -Navega a la carpeta: cd frontend

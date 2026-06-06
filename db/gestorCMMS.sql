@@ -56,13 +56,3 @@ CREATE TABLE historial_mantenimiento (
     FOREIGN KEY (tecnico_responsable_id) REFERENCES usuarios(id) ON DELETE RESTRICT
 );
 
--- Contraseña de acceso: AdminPlanta2026!
-INSERT INTO usuarios (username, password_hash, nombre_completo, rol, intentos_fallidos)
-VALUES (
-    'admin', 
-    '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36XKpU96k6bV6.26v91Z96.', -- Hash Bcrypt de: AdminPlanta2026!
-    'Administrador Principal', 
-    'Administrador', 
-    0
-)
-ON CONFLICT (username) DO NOTHING;
