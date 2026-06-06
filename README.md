@@ -6,14 +6,6 @@ Sistema integral para la gestión de activos, órdenes de trabajo (OT) y trazabi
    -Python: v3.10 o superior
    -PostgreSQL: v14 o superior
 
-# Configuración de la Base de Datos
-   -Crea una base de datos nueva llamada gestorCMMS en tu gestor de preferencia (pgAdmin).
-   -Ejecuta el script database.sql incluido en el repositorio para crear las tablas.
-
-# Creacion de primer usuario administrador
-   -Ejecuta una ves init_db.py dentro de la ruta backend
-   python init_db.py
-
 # Credenciales iniciales:
    -Usuario: admin
    -Contraseña: AdminPlanta2026!
@@ -35,6 +27,14 @@ Sistema integral para la gestión de activos, órdenes de trabajo (OT) y trazabi
       DATABASE_URL=postgresql://usuario:contraseña@localhost:5432/gestorCMMS
       JWT_SECRET=DinoCode_12_12_75_@503SV
       (Nota: Asegúrate de reemplazar usuario y contraseña por tus credenciales reales de PostgreSQL).
+
+# Configuración de la Base de Datos
+   -Crea una base de datos nueva llamada gestorCMMS en tu gestor de preferencia (pgAdmin).
+   -Ejecuta el script database.sql incluido en el repositorio para crear las tablas.
+
+# Creacion de primer usuario administrador
+   -Ejecuta una ves init_db.py dentro de la ruta backend
+   python init_db.py
 
 # Ejecuta: 
 uvicorn app.main:app --reload
